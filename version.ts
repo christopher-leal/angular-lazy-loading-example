@@ -5,8 +5,7 @@ const { writeFileSync } = require('fs-extra');
 
 const gitInfo = gitDescribeSync({
 	dirtyMark: false,
-	dirtySemver: false,
-	longSemver: true
+	dirtySemver: false
 });
 
 gitInfo.version = version;
