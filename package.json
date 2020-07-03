@@ -11,7 +11,7 @@
 		"update-version": "node version.ts",
 		"prettier:check": "prettier --check 'src/**/*.{js,mdx}'",
 		"validate": "run-s test lint prettier:check",
-		"release": "standard-version -a && npm run update-version",
+		"release": "standard-version && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
 		"ci:validate": "rm -rf node_modules && npm ci && npm run validate"
