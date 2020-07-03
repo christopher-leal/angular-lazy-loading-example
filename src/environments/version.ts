@@ -1,29 +1,27 @@
 // IMPORTANT: THIS FILE IS AUTO GENERATED! DO NOT MANUALLY EDIT OR CHECKIN!
 /* tslint:disable */
 export const VERSION = {
-    "dirty": true,
-    "raw": "v1.5.1-beta-2-gae0ae5d-dirty",
-    "hash": "gae0ae5d",
-    "distance": 2,
-    "tag": "v1.5.1-beta",
+    "dirty": false,
+    "raw": "v0.0.1-0-gb8c251e",
+    "hash": "gb8c251e",
+    "distance": 0,
+    "tag": "v0.0.1",
     "semver": {
         "options": {
             "loose": false,
             "includePrerelease": false
         },
         "loose": false,
-        "raw": "v1.5.1-beta",
-        "major": 1,
-        "minor": 5,
+        "raw": "v0.0.1",
+        "major": 0,
+        "minor": 0,
         "patch": 1,
-        "prerelease": [
-            "beta"
-        ],
+        "prerelease": [],
         "build": [],
-        "version": "1.5.1-beta"
+        "version": "0.0.1"
     },
-    "suffix": "2-gae0ae5d-dirty",
-    "semverString": "1.5.1-beta+2.gae0ae5d",
-    "version": "0.0.0"
+    "suffix": "0-gb8c251e",
+    "semverString": "0.0.1",
+    "version": "0.0.1"
 };
 /* tslint:enable */
