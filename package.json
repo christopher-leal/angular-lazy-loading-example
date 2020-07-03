@@ -12,9 +12,7 @@
 		"release": "standard-version -a && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
-		"release:github": "conventional-github-releaser -p angular",
-		"ci:validate": "rm -rf node_modules && npm ci && npm run validate",
-		"prepublishOnly": "npm run ci:validate && npm run build"
+		"release:github": "conventional-github-releaser -p angular"
 	},
 	"private": true,
 	"dependencies": {
@@ -40,6 +38,7 @@
 		"@types/jasminewd2": "~2.0.3",
 		"@types/node": "^12.11.1",
 		"codelyzer": "^5.1.2",
+		"conventional-github-releaser": "^3.1.4",
 		"jasmine-core": "~3.5.0",
 		"jasmine-spec-reporter": "~4.2.1",
 		"karma": "~4.3.0",
