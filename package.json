@@ -1,6 +1,6 @@
 {
 	"name": "lazy-loading",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
@@ -9,7 +9,7 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"postinstall": "node version.ts",
-		"release": "standard-version"
+		"release": "standard-version -a"
 	},
 	"private": true,
 	"dependencies": {
