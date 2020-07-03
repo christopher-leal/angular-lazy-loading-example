@@ -1,6 +1,6 @@
 {
 	"name": "lazy-loading",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
@@ -9,7 +9,7 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"update-version": "node version.ts",
-		"release": "standard-version && npm run update-version && git add version.ts && git commit -m 'version updated'",
+		"release": "standard-version && npm run update-version && git add version.ts && git commit ",
 		"release:tags": "git push --follow-tags origin master",
 		"release:github": "conventional-github-releaser -p angular"
 	},
