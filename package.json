@@ -12,7 +12,9 @@
 		"release": "standard-version -a && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
-		"release:github": "conventional-github-releaser -p angular"
+		"release:github": "conventional-github-releaser -p angular",
+		"ci:validate": "rm -rf node_modules && npm ci && npm run validate",
+		"prepublishOnly": "npm run ci:validate && npm run build"
 	},
 	"private": true,
 	"dependencies": {
