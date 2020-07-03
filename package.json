@@ -1,6 +1,6 @@
 {
 	"name": "lazy-loading",
-	"version": "0.0.23",
+	"version": "0.0.24",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
@@ -14,7 +14,6 @@
 		"release": "standard-version -a && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
-		"release:github": "conventional-github-releaser -p angular",
 		"ci:validate": "rm -rf node_modules && npm ci && npm run validate"
 	},
 	"config": {
