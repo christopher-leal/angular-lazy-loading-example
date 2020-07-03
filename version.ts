@@ -1,5 +1,5 @@
 const { gitDescribeSync } = require('git-describe');
-const { version } = require('../package.json');
+const { version } = require('./package.json');
 const { resolve, relative } = require('path');
 const { writeFileSync } = require('fs-extra');
 
@@ -10,7 +10,7 @@ const gitInfo = gitDescribeSync({
 
 gitInfo.version = version;
 console.log(gitInfo);
-const file = resolve(__dirname, '..', 'src', 'environments', 'version.ts');
+const file = resolve(__dirname, '.', 'src', 'environments', 'version.ts');
 writeFileSync(
 	file,
 	`// IMPORTANT: THIS FILE IS AUTO GENERATED! DO NOT MANUALLY EDIT OR CHECKIN!
@@ -22,3 +22,4 @@ export const VERSION = ${JSON.stringify(gitInfo, null, 4)};
 );
 
 console.log(`Wrote version info ${gitInfo.raw} to ${relative(resolve(__dirname, '..'), file)}`);
+// console.log('entro');
