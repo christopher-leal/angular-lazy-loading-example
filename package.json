@@ -9,12 +9,24 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"update-version": "node version.ts",
+		"prettier:check": "prettier --check 'src/**/*.{js,mdx}'",
+		"validate": "run-s test lint prettier:check",
 		"release": "standard-version -a && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
 		"release:github": "conventional-github-releaser -p angular",
-		"ci:validate": "rm -rf node_modules && npm ci && npm run validate",
-		"prepublishOnly": "npm run ci:validate && npm run build"
+		"ci:validate": "rm -rf node_modules && npm ci && npm run validate"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "lint-staged"
+		}
 	},
 	"private": true,
 	"dependencies": {
