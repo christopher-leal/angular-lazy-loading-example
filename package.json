@@ -9,7 +9,7 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"commit": "git-cz",
-		"update-version": "node version.ts",
+		"update-version": "node version.ts && git add version.ts && git commit -m '$updated'",
 		"release": "standard-version -a && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
