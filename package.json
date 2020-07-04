@@ -9,7 +9,7 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"commit": "git-cz",
-		"update-version": "node version.ts && git add . && git commit -m '$updated'",
+		"update-version": "node version.ts && git add . && git commit -m 'updated-version'",
 		"release": "standard-version -a && npm run update-version"
 	},
 	"private": true,
