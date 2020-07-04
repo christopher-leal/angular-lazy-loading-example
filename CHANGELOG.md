@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/christopher-leal/angular-lazy-loading-example/compare/v4.0.0...v5.0.0) (2020-07-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* prueba de change
+
+### Features
+
+* prueba ([6b006f7](https://github.com/christopher-leal/angular-lazy-loading-example/commit/6b006f74c6c1b1cba4dc48dc928067332adfbbd4))
+
 ## [4.0.0](https://github.com/christopher-leal/angular-lazy-loading-example/compare/v3.1.0...v4.0.0) (2020-07-04)
 
 
