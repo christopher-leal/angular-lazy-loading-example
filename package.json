@@ -1,6 +1,6 @@
 {
 	"name": "lazy-loading",
-	"version": "1.4.4",
+	"version": "1.4.5",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
@@ -9,9 +9,7 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"update-version": "node version.ts",
-		"prettier:check": "prettier --check 'src/**/*.{js,mdx}'",
-		"validate": "run-s test lint prettier:check",
-		"release": "npm run validate && standard-version -a && npm run update-version",
+		"release": "standard-version -a && npm run update-version",
 		"postrelease": "run-s release:*",
 		"release:tags": "git push --follow-tags origin master",
 		"ci:validate": "rm -rf node_modules && npm ci && npm run validate"
