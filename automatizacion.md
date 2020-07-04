@@ -23,4 +23,5 @@ npm i -D commitizen npm-run-all standard-version cz-conventional-changelog
             - git commit -m "fix: ..." para actualizaciones de parche(1.0.0 -> 1.0.1)
             - git commit -m "feat: ..." para actualizaciones de menores(1.0.0 -> 1.1.0)
             - git commit -m "Titulo" -m "BREAKING CHANGE: cuerpo del mensaje" para actualizaciones de mayores (1.0.0 -> 2.0.0)
+        ** NOTA: sino se deja ninguna de las palabras claves en el commit por default se efectua la fix
     * una vez que termine ejecutamos npm run release y ejecutara las acciiones, cuando se tiene la palabra <pre> o <post> se ejecutan antes y despues del comando a ejecutar respectivamente
