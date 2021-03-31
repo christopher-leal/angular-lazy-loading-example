@@ -1,5 +1,5 @@
 # Para la automatizacion necesitaremos correr el siguiente comando
-npm i -D commitizen npm-run-all standard-version cz-conventional-changelog
+npm i -D commitizen npm-run-all standard-version cz-conventional-changelog git-describe
 * puede que se tenga que instalar global el commitizen
 
 ## Una vez instaladas todas las dependencias corremos el siguiente comando
